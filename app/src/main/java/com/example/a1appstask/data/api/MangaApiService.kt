@@ -1,4 +1,4 @@
-package com.example.a1appstask.data
+package com.example.a1appstask.data.api
 
 import com.example.a1appstask.models.Manga
 import retrofit2.Response

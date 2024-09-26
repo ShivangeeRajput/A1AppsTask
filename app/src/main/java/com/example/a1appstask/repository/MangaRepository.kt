@@ -1,6 +1,6 @@
 package com.example.a1appstask.repository
 
-import com.example.a1appstask.data.MangaApiService
+import com.example.a1appstask.data.api.MangaApiService
 import com.example.a1appstask.models.Manga
 
 

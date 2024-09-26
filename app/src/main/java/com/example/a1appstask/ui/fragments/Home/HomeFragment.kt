@@ -46,7 +46,7 @@ class HomeFragment : Fragment() {
             }
         }
 
-
+        // Fetch the Manga list
         homeViewModel.fetchMangaList()
     }
 

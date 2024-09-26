@@ -1,6 +1,6 @@
 package com.example.a1appstask.di
 
-import com.example.a1appstask.data.MangaApiService
+import com.example.a1appstask.data.api.MangaApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
