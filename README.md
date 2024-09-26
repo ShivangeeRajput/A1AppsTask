@@ -1,5 +1,5 @@
 ## Video Walkthrough
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough:
 
 <p>
 
