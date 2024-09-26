@@ -2,6 +2,8 @@
 Here's a walkthrough of implemented user stories:
 
 <p>
+
+<img src="https://github.com/user-attachments/assets/53b6f1b8-9d0b-420f-8ada-9dfca6f5b2e7" height="500"> 
 </p>
 
 ## Screenshots
