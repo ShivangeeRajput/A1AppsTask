@@ -35,18 +35,16 @@ class HomeFragment : Fragment() {
         // Initialize RecyclerView with GridLayoutManager
         val mangaAdapter = MangaAdapter(emptyList())
         binding.recyclerView.apply {
-            layoutManager = GridLayoutManager(context, 2)  // 2 columns for grid
+            layoutManager = GridLayoutManager(context, 2)
             adapter = mangaAdapter
         }
 
-        // Observe data from ViewModel
         lifecycleScope.launch {
             homeViewModel.mangaList.collect { mangaList ->
                 mangaAdapter.updateData(mangaList)
             }
         }
 
-        // Fetch the Manga list
         homeViewModel.fetchMangaList()
     }
 

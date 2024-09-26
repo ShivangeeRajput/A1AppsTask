@@ -1,7 +1,6 @@
 package com.example.a1appstask.utils
 
 class Constants {
-
     companion object {
         const val X_RapidAPI_Key = "046ed2ddb1msh402330e1e6b9202p163726jsn1b81714babb3"
         const val X_RapidAPI_Host = "mangaverse-api.p.rapidapi.com"
