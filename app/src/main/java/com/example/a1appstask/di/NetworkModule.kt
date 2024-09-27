@@ -27,7 +27,7 @@ object NetworkModule {
 
         val apiKeyInterceptor = Interceptor { chain ->
             val request = chain.request().newBuilder()
-                .addHeader("X-RapidAPI-Key", "YOUR_RAPIDAPI_KEY")  // Replace with your actual API key
+                .addHeader("X-RapidAPI-Key", "046ed2ddb1msh402330e1e6b9202p163726jsn1b81714babb3")
                 .addHeader("X-RapidAPI-Host", "mangaverse-api.p.rapidapi.com")
                 .build()
             chain.proceed(request)
