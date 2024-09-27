@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.a1appstask.R
+import com.example.a1appstask.adapter.FavoriteRvAdapter
 import com.example.a1appstask.databinding.FragmentFavouriteScreenBinding
 import com.prplmnstr.a1appstask.model.Favorite
 

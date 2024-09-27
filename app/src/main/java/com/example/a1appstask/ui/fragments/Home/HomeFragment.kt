@@ -7,11 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.a1appstask.R
 import com.example.a1appstask.databinding.FragmentHomeBinding
 import com.example.a1appstask.models.HomeViewModel
 import com.example.a1appstask.ui.adapter.MangaAdapter
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -32,7 +35,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Initialize RecyclerView with GridLayoutManager
         val mangaAdapter = MangaAdapter(emptyList())
         binding.recyclerView.apply {
             layoutManager = GridLayoutManager(context, 2)
@@ -43,6 +45,10 @@ class HomeFragment : Fragment() {
             homeViewModel.mangaList.collect { mangaList ->
                 mangaAdapter.updateData(mangaList)
             }
+        }
+        lifecycleScope.launch{
+            delay(2000)
+            findNavController().navigate(R.id.action_homeFragment_to_favouriteScreenFragment)
         }
 
         homeViewModel.fetchMangaList()

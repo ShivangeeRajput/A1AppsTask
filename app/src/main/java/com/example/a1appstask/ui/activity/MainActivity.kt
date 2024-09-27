@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationView: BottomNavigationView = binding.bottomNavigationView
         bottomNavigationView.setupWithNavController(navController)
 
-        // Add a listener to NavController to hide or show the bottom navigation
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.splashScreenFragment -> hideBottomNavigation()
